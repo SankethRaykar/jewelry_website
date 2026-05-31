@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.shimmer-effect {
+    background: linear-gradient(90deg, transparent, rgba(233, 216, 166, 0.2), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.glass-nav {
+    backdrop-filter: blur(12px);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fdf9f3;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d0c5b2;
+    border-radius: 10px;
+}
