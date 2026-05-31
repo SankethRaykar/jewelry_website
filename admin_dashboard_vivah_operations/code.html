@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIVAH LUXE | Admin Suite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#70343e",
+                    "surface-container": "#f1ede7",
+                    "shimmer-gold": "#E9D8A6",
+                    "on-background": "#1c1c18",
+                    "outline": "#7e7665",
+                    "outline-variant": "#d0c5b2",
+                    "secondary": "#5f5e5e",
+                    "surface-container-low": "#f7f3ed",
+                    "inverse-primary": "#e6c364",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "inverse-on-surface": "#f4f0ea",
+                    "tertiary": "#8c4b55",
+                    "secondary-fixed-dim": "#c9c6c5",
+                    "error-container": "#ffdad6",
+                    "background": "#fdf9f3",
+                    "surface-variant": "#e6e2dc",
+                    "inverse-surface": "#31302d",
+                    "on-surface-variant": "#4d4637",
+                    "surface-container-highest": "#e6e2dc",
+                    "on-tertiary-fixed": "#3a0915",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#656464",
+                    "surface-dim": "#dddad4",
+                    "tertiary-fixed-dim": "#ffb2bc",
+                    "sale-accent": "#E5097F",
+                    "tertiary-container": "#e595a0",
+                    "primary-fixed": "#ffe08f",
+                    "surface-white": "#FFFFFF",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fdf9f3",
+                    "on-primary-container": "#503d00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#672d37",
+                    "deep-rose": "#8E535C",
+                    "on-error": "#ffffff",
+                    "primary": "#755b00",
+                    "on-surface": "#1c1c18",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#c9a84c",
+                    "tertiary-fixed": "#ffd9dd",
+                    "surface-container-high": "#ebe8e2",
+                    "on-primary-fixed": "#241a00",
+                    "secondary-container": "#e5e2e1",
+                    "surface": "#fdf9f3",
+                    "primary-fixed-dim": "#e6c364",
+                    "on-primary-fixed-variant": "#584400",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "section-gap": "120px",
+                    "container-max": "1440px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "display-md": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shimmer-effect {
+            background: linear-gradient(90deg, transparent, rgba(233, 216, 166, 0.2), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fdf9f3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d0c5b2;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex">
+<!-- SideNavBar Component -->
+<aside class="fixed left-0 top-0 h-full flex flex-col p-4 space-y-6 bg-surface-container dark:bg-surface-container-highest border-r border-outline-variant dark:border-outline w-64 z-50">
+<div class="flex flex-col space-y-1 mb-4">
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Admin Suite</h1>
+<p class="text-on-surface-variant font-label-sm text-label-sm">VIVAH Operations</p>
+</div>
+<nav class="flex-1 space-y-1">
+<!-- Active Navigation -->
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-xl font-bold translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span>
+<span class="font-label-sm text-label-sm">Inventory</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-sm text-label-sm">Orders</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-label-sm text-label-sm">Customers</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+<span class="font-label-sm text-label-sm">Analytics</span>
+</a>
+</nav>
+<div class="pt-6 border-t border-outline-variant space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="font-label-sm text-label-sm">Support</span>
+</a>
+<div class="flex items-center gap-3 px-4 py-4 mt-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed overflow-hidden ring-2 ring-primary/20">
+<img alt="Admin User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz1rFGq_bp9tRz4fjIqkxLLQPEEoQkMRm6OBZ1wAw38VXQuCCLQ8iTg3rsMmSDsIvQlDftYHMzbPdqmj-U5RZUigv11VV854DkkxU_KfDjc1U4uZDv3GoL8i7b9U1I8Jk88bLzAMscnOOSStnEt3nAMK3dU0_amo6PxzK9XkhAlWkLVXzUcHL-fIYHoo36X-WjvgRZmy5wXEa83zUHE9Y2CG04TY1gezmzWL9Q1jnR2Tftf8VUp2v2q_pg2QvV_phIN_FiWLNkTDIt"/>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface font-bold text-label-sm">Devan R.</span>
+<span class="text-on-surface-variant text-[10px] uppercase tracking-widest">Operations lead</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-64 flex-1 p-8">
+<!-- Header -->
+<header class="flex justify-between items-center mb-10">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Operations Overview</h2>
+<p class="text-on-surface-variant font-body-md mt-1">Daily snapshot of VIVAH LUXE performance</p>
+</div>
+<div class="flex gap-4">
+<button class="bg-surface-white border border-outline-variant px-6 py-2.5 rounded-lg font-label-sm flex items-center gap-2 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_today">calendar_today</span>
+                    Dec 1 - Dec 31, 2024
+                </button>
+<button class="bg-on-background text-primary-fixed px-6 py-2.5 rounded-lg font-label-sm flex items-center gap-2 hover:shadow-lg transition-all active:scale-95 shimmer-effect">
+<span class="material-symbols-outlined text-[18px]" data-icon="download">download</span>
+                    Export Report
+                </button>
+</div>
+</header>
+<!-- Summary Cards Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-10">
+<!-- Total Revenue -->
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-primary-fixed/30 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="payments" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<span class="text-primary font-bold text-label-sm">+12.5%</span>
+</div>
+<h3 class="text-on-surface-variant font-label-sm uppercase tracking-wider">Total Revenue</h3>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">₹42,85,200</p>
+</div>
+<!-- Total Orders -->
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-secondary-container rounded-lg text-secondary group-hover:bg-on-secondary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="local_mall" style="font-variation-settings: 'FILL' 1;">local_mall</span>
+</div>
+<span class="text-primary font-bold text-label-sm">+8.1%</span>
+</div>
+<h3 class="text-on-surface-variant font-label-sm uppercase tracking-wider">Total Orders</h3>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">1,482</p>
+</div>
+<!-- Active Products -->
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-tertiary-fixed rounded-lg text-tertiary group-hover:bg-tertiary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="diamond" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<span class="text-secondary font-bold text-label-sm">Stable</span>
+</div>
+<h3 class="text-on-surface-variant font-label-sm uppercase tracking-wider">Active Products</h3>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">324</p>
+</div>
+<!-- New Customers -->
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-on-tertiary-fixed/10 rounded-lg text-on-tertiary-fixed-variant group-hover:bg-on-tertiary-fixed-variant group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="person_add" style="font-variation-settings: 'FILL' 1;">person_add</span>
+</div>
+<span class="text-primary font-bold text-label-sm">+24.0%</span>
+</div>
+<h3 class="text-on-surface-variant font-label-sm uppercase tracking-wider">New Customers</h3>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">186</p>
+</div>
+</section>
+<!-- Charts & Low Stock Row -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-10">
+<!-- Revenue Chart -->
+<div class="lg:col-span-2 bg-surface-white p-8 rounded-xl border border-outline-variant shadow-sm">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Monthly Revenue</h3>
+<p class="text-on-surface-variant font-label-sm">Comparison of sales across the last 6 months</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-on-surface">Current Year</span>
+</div>
+</div>
+<!-- Mock Chart Visualization -->
+<div class="h-64 flex items-end justify-between gap-4 px-2">
+<div class="flex-1 flex flex-col items-center group">
+<div class="w-full bg-primary/20 group-hover:bg-primary/40 transition-all rounded-t-lg" style="height: 60%"></div>
+<span class="mt-4 font-label-sm text-on-surface-variant">JUL</span>
+</div>
+<div class="flex-1 flex flex-col items-center group">
+<div class="w-full bg-primary/20 group-hover:bg-primary/40 transition-all rounded-t-lg" style="height: 45%"></div>
+<span class="mt-4 font-label-sm text-on-surface-variant">AUG</span>
+</div>
+<div class="flex-1 flex flex-col items-center group">
+<div class="w-full bg-primary/20 group-hover:bg-primary/40 transition-all rounded-t-lg" style="height: 85%"></div>
+<span class="mt-4 font-label-sm text-on-surface-variant">SEP</span>
+</div>
+<div class="flex-1 flex flex-col items-center group">
+<div class="w-full bg-primary/20 group-hover:bg-primary/40 transition-all rounded-t-lg" style="height: 70%"></div>
+<span class="mt-4 font-label-sm text-on-surface-variant">OCT</span>
+</div>
+<div class="flex-1 flex flex-col items-center group">
+<div class="w-full bg-primary/20 group-hover:bg-primary/40 transition-all rounded-t-lg" style="height: 95%"></div>
+<span class="mt-4 font-label-sm text-on-surface-variant">NOV</span>
+</div>
+<div class="flex-1 flex flex-col items-center group relative">
+<div class="absolute -top-10 bg-on-background text-white text-[10px] px-2 py-1 rounded">₹8.2L</div>
+<div class="w-full bg-primary transition-all rounded-t-lg" style="height: 100%"></div>
+<span class="mt-4 font-label-sm text-on-surface font-bold">DEC</span>
+</div>
+</div>
+</div>
+<!-- Low Stock Alerts -->
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface">Stock Alerts</h3>
+<span class="bg-error-container text-on-error-container text-[10px] font-bold px-2 py-1 rounded-full">3 CRITICAL</span>
+</div>
+<div class="flex-1 space-y-4">
+<div class="flex items-center gap-4 p-3 border-b border-outline-variant hover:bg-surface-container-low transition-colors rounded-lg group">
+<img class="w-12 h-12 object-cover rounded-lg" data-alt="Close up product photography of a high-end luxury gold necklace with intricate filigree details against a soft ivory backdrop. Professional studio lighting emphasizes the shimmering textures of the jewelry, creating a regal and opulent mood aligned with the brand's premium boutique aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8HWhPq3zkZzi0beiOLjWXbbb6azd01SBj7A_b9qUs5xd-YL-0krfNKltEtV5rG-kdnkI7j7z-TSXyJrALRLYkbVYg5bDN7UTXGATcXwKD7AbJjBl0qbeScgQi3rdgNSRWDGXi7pvBgToadhYl1jnSVsqy9nP19y4Ebc04ZhvG9qKDmtTI_3QYopzFi8jDnypGKVdOth8258JzVK1z87MMBVTFrHcfEwaEyI6AEoJg8bChMzg_6nNV9HVYfFJIuX_yqqjkbL5N7WQT"/>
+<div class="flex-1 min-w-0">
+<p class="text-on-surface font-bold text-label-sm truncate">Temple Gold Choker</p>
+<p class="text-error font-label-sm">Only 2 units left</p>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity" data-icon="more_vert">more_vert</button>
+</div>
+<div class="flex items-center gap-4 p-3 border-b border-outline-variant hover:bg-surface-container-low transition-colors rounded-lg group">
+<img class="w-12 h-12 object-cover rounded-lg" data-alt="Elegant rose gold and diamond earrings displayed on a minimalist ivory jewelry stand. The scene is illuminated by soft, diffused high-key lighting to highlight the fine craftsmanship and shimmering facets of the precious stones. The overall style is editorial and luxurious, reflecting a sophisticated Indian heritage brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY4xnGahg4LUyVxA8CtF-x6j4e1_Ixf9uBKYHqFiaJlAWFoumiVPUG_cWPyaOd8oLeoe7H_mu1Y4iXMS-54TNMfEYE0mtUhZiyQPWMY73Zd3luemjFh-3hzsKJYqm-4l1HIv569LrX51qwgD3_eIs8vHCzLRN07gttnor80MMCK1MRrUHZcBHmIWIah5GTkcJSj2zr81PLHZzYYCSek7BcTg0NetK8S6S-BVsDN8cu9qckkKwgmc8lzEqFlGNryPAQ4IQAkkSzcc3n"/>
+<div class="flex-1 min-w-0">
+<p class="text-on-surface font-bold text-label-sm truncate">Kundan Pearl Drops</p>
+<p class="text-on-tertiary-fixed-variant font-label-sm">Low Stock: 5 units</p>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity" data-icon="more_vert">more_vert</button>
+</div>
+<div class="flex items-center gap-4 p-3 border-b border-outline-variant hover:bg-surface-container-low transition-colors rounded-lg group">
+<img class="w-12 h-12 object-cover rounded-lg" data-alt="Detailed view of a hand-crafted gold bangle with ruby stone embellishments, set against a clean ivory silk fabric. Cinematic lighting creates soft shadows and bright highlights on the gold surface. The image represents the pinnacle of ethnic luxury craftsmanship for a premium high-end jewelry e-commerce dashboard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcYNGdDS24td-Uet_3QkdXpHx_1ztMjpmv8LF-cL73UU1wBl2dn4UaOLtopdHO-OjpMnzl7ZBUOdkDd0p4HRXqUYpD-VWPJKPkHa3M2wpsBluHg1CB4eyhWLTwdSoLS5QhCOHz3PxBilh9nIxuHCXSoSZ1SI3IfY5v7junPIIFU3ncr1Wcct69CH4VhQglctuj1VYZT5775Gi30SA3Q1uDMscKBKjTdw6OQGlJj8O8JCqqZjhvCn4coOFfrc2WDBMOEmyGr5rVLGVE"/>
+<div class="flex-1 min-w-0">
+<p class="text-on-surface font-bold text-label-sm truncate">Polki Bridal Bangle</p>
+<p class="text-error font-label-sm">Out of Stock</p>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity" data-icon="more_vert">more_vert</button>
+</div>
+</div>
+<button class="w-full mt-6 py-3 text-primary font-bold text-label-sm border border-primary hover:bg-primary-fixed/20 transition-all rounded-lg">View Full Inventory</button>
+</div>
+</section>
+<!-- Recent Orders Table -->
+<section class="bg-surface-white rounded-xl border border-outline-variant shadow-sm overflow-hidden">
+<div class="p-8 flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Recent Orders</h3>
+<div class="flex gap-2">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-lg transition-colors">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+<button class="text-primary font-bold text-label-sm px-4 py-2">View All</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low border-y border-outline-variant">
+<tr>
+<th class="px-8 py-4 font-label-sm text-on-surface-variant uppercase tracking-wider">Order ID</th>
+<th class="px-8 py-4 font-label-sm text-on-surface-variant uppercase tracking-wider">Customer</th>
+<th class="px-8 py-4 font-label-sm text-on-surface-variant uppercase tracking-wider">Product</th>
+<th class="px-8 py-4 font-label-sm text-on-surface-variant uppercase tracking-wider">Amount</th>
+<th class="px-8 py-4 font-label-sm text-on-surface-variant uppercase tracking-wider">Status</th>
+<th class="px-8 py-4 font-label-sm text-on-surface-variant uppercase tracking-wider text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-8 py-5 font-bold text-on-surface">#VL-9012</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-[10px]">AS</div>
+<span class="text-on-surface font-medium">Ananya Sharma</span>
+</div>
+</td>
+<td class="px-8 py-5 text-on-surface-variant">Rani Haar Necklace</td>
+<td class="px-8 py-5 font-medium text-on-surface">₹1,24,000</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-primary-fixed/30 text-on-primary-fixed-variant text-[10px] font-bold rounded-full border border-primary/20">Processing</span>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors material-symbols-outlined" data-icon="visibility">visibility</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-8 py-5 font-bold text-on-surface">#VL-9011</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-[10px]">RK</div>
+<span class="text-on-surface font-medium">Rahul Kapoor</span>
+</div>
+</td>
+<td class="px-8 py-5 text-on-surface-variant">Gold Wedding Band</td>
+<td class="px-8 py-5 font-medium text-on-surface">₹45,500</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold rounded-full border border-outline-variant">Placed</span>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors material-symbols-outlined" data-icon="visibility">visibility</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-8 py-5 font-bold text-on-surface">#VL-9010</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-[10px]">MP</div>
+<span class="text-on-surface font-medium">Meera Patel</span>
+</div>
+</td>
+<td class="px-8 py-5 text-on-surface-variant">Diamond Jhumkas</td>
+<td class="px-8 py-5 font-medium text-on-surface">₹88,000</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-[10px] font-bold rounded-full border border-green-200 uppercase">Shipped</span>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors material-symbols-outlined" data-icon="visibility">visibility</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<script>
+        // Micro-interactions for admin dashboard
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.98)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = '';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = '';
+            });
+        });
+
+        // Simulating loading shimmer on images
+        window.addEventListener('load', () => {
+            document.querySelectorAll('img').forEach(img => {
+                img.parentElement.classList.add('relative');
+                const overlay = document.createElement('div');
+                overlay.className = 'absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer pointer-events-none';
+                img.parentElement.appendChild(overlay);
+                setTimeout(() => {
+                    overlay.remove();
+                }, 1500);
+            });
+        });
+    </script>
+</body></html>

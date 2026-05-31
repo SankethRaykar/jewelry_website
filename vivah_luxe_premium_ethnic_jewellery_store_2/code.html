@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIVAH LUXE | Cinematic Ethnic Jewellery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#e5e2e1",
+                      "on-tertiary-fixed-variant": "#70343e",
+                      "surface-container": "#f1ede7",
+                      "shimmer-gold": "#E9D8A6",
+                      "on-background": "#1c1c18",
+                      "outline": "#7e7665",
+                      "outline-variant": "#d0c5b2",
+                      "secondary": "#5f5e5e",
+                      "surface-container-low": "#f7f3ed",
+                      "inverse-primary": "#e6c364",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "inverse-on-surface": "#f4f0ea",
+                      "tertiary": "#8c4b55",
+                      "secondary-fixed-dim": "#c9c6c5",
+                      "error-container": "#ffdad6",
+                      "background": "#fdf9f3",
+                      "surface-variant": "#e6e2dc",
+                      "inverse-surface": "#31302d",
+                      "on-surface-variant": "#4d4637",
+                      "surface-container-highest": "#e6e2dc",
+                      "on-tertiary-fixed": "#3a0915",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#656464",
+                      "surface-dim": "#dddad4",
+                      "tertiary-fixed-dim": "#ffb2bc",
+                      "sale-accent": "#E5097F",
+                      "tertiary-container": "#e595a0",
+                      "primary-fixed": "#ffe08f",
+                      "surface-white": "#FFFFFF",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#fdf9f3",
+                      "on-primary-container": "#503d00",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#672d37",
+                      "deep-rose": "#8E535C",
+                      "on-error": "#ffffff",
+                      "surface-tint": "#755b00",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#755b00",
+                      "on-surface": "#1c1c18",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#c9a84c",
+                      "tertiary-fixed": "#ffd9dd",
+                      "surface-container-high": "#ebe8e2",
+                      "on-primary-fixed": "#241a00",
+                      "secondary-container": "#e5e2e1",
+                      "surface": "#fdf9f3",
+                      "primary-fixed-dim": "#e6c364",
+                      "on-primary-fixed-variant": "#584400",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "section-gap": "120px",
+                      "container-max": "1440px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Playfair Display"],
+                      "headline-md": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"],
+                      "display-lg": ["Playfair Display"],
+                      "display-md": ["Playfair Display"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "display-md": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .shimmer-effect {
+            background: linear-gradient(90deg, transparent, rgba(233, 216, 166, 0.4), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .editorial-shadow {
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.15);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Announcement Bar -->
+<div class="sticky top-0 z-[60] bg-primary-container text-on-primary-container py-2 overflow-hidden whitespace-nowrap">
+<div class="inline-block animate-[marquee_20s_linear_infinite] px-4 font-label-sm uppercase tracking-widest">
+            Free shipping above ₹500 | Festive Sale: Up to 60% Off | Discover the Royal Heirloom Collection | Free shipping above ₹500 | Festive Sale: Up to 60% Off
+        </div>
+</div>
+<!-- Navigation Bar -->
+<nav class="sticky top-[40px] z-50 bg-surface/85 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-24">
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-primary border-b-2 border-primary pb-1" href="#">Necklaces</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Earrings</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Bridal</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Collections</a>
+</div>
+<a class="font-display-md text-display-md text-on-surface tracking-tighter uppercase" href="/">
+                VIVAH LUXE
+            </a>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md ml-2 w-40" placeholder="Search heritage..." type="text"/>
+</div>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-all duration-300">person</button>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-all duration-300 relative">
+                    shopping_bag
+                    <span class="absolute -top-1 -right-1 bg-sale-accent text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">2</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Carousel Section -->
+<section class="relative h-[921px] w-full overflow-hidden">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover" data-alt="A grand cinematic portrait of a woman wearing an elaborate Kundan bridal necklace set with emerald drops and a matching maang tikka. The lighting is warm and dramatic, highlighting the sparkle of the gold and uncut diamonds against a rich ivory and gold backdrop. The atmosphere is regal and editorial, evoking a high-end luxury fashion campaign." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5ytXBTV-iv0YSmCNATE9YjG0oDtoMVEINJ5R6lWP34bikk977SxyTwGsmyCgrbZpVWjYBmmpvA9PHki7PWq4rSjyA7H7B_aRAauRLPPJKiUfgnp_nL-9Nmsz0uDA-Z8P6U5ls7LY0IGssKXLFAJnaS9rt4I2M9BE5L3YiHkV2lKg6qKoo5PlY6FdPva0fy7MS74ypHSwAyNsmkAMMpRgdz0uZUgKoSDGxSop9Ru87TsqAeLVa7d3B-YJwGs-9vqgyAhR12YwHEwwV"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
+</div>
+<div class="relative h-full flex flex-col justify-center px-margin-desktop max-w-container-max mx-auto text-white">
+<span class="font-label-sm uppercase tracking-[0.4em] mb-4 text-primary-fixed">The Heirloom Series</span>
+<h1 class="font-display-lg text-display-lg mb-8 max-w-2xl leading-[1.1]">Elegance Reimagined <br/> for the Modern Queen</h1>
+<div class="flex gap-4">
+<button class="bg-on-background text-primary-container px-12 py-5 font-label-sm uppercase tracking-widest rounded-lg hover:shimmer-effect transition-all duration-500 relative overflow-hidden group border border-primary-container/20">
+<span class="relative z-10">Shop Now</span>
+</button>
+<button class="border border-white text-white px-12 py-5 font-label-sm uppercase tracking-widest rounded-lg hover:bg-white hover:text-black transition-all duration-300">
+                    The Film
+                </button>
+</div>
+</div>
+<!-- Carousel Indicators -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-3">
+<span class="w-12 h-[2px] bg-white"></span>
+<span class="w-12 h-[2px] bg-white/40"></span>
+<span class="w-12 h-[2px] bg-white/40"></span>
+</div>
+</section>
+<!-- Category Icon Grid -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-16 uppercase tracking-widest">Shop by Category</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Cat 1 -->
+<a class="group flex flex-col items-center" href="#">
+<div class="w-full aspect-square bg-surface-container-low rounded-full overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-105 editorial-shadow relative border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Close-up photograph of a heavy traditional Indian necklace with intricate gold filigree and ruby-red stones on an ivory surface. Soft diffused side lighting creates long delicate shadows, emphasizing the craftsmanship and luxury of the jewelry piece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDWRCPCCTB9eW3ksLZr8PEA5nEWUDb8TSXaqg1kd-Jf5v5rthZY1hba1o0kYzPmpCjEbhLPr4OqHIGFeXXlWDsqfgp0U1cL_tK3CjcyLY5uFMxxwZgLD7GV7Xr3-5MSafBvD8wP8juRKRyb_bFGzEtxzLIOrzIA3AhqQHm6WZtKrRWFWTL4LbY4NkuP59OG5FH1Smn2lJGwHanF7y0e8diDe3KlxMZMiJ-oxp_beTYVKihe5lVJVuCEavGHhdJKwHi5vnFnsQ3cpF3"/>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Necklace Sets</span>
+</a>
+<!-- Cat 2 -->
+<a class="group flex flex-col items-center" href="#">
+<div class="w-full aspect-square bg-surface-container-low rounded-full overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-105 editorial-shadow relative border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Macro detail of stunning Jhumka earrings with pearl drops and gold carvings. The background is a minimalist light ivory, and the lighting mimics high-fashion editorial studio lights, focusing on the shimmer and brilliance of the precious stones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQxPLqZEVJ8meCC1GHiT-oRZT7H_srvQx2CVzIZ9jxZIDNRbTzMsIdnS4_7VTiSwgfMlnpH8-uiV4EB6nLi_ZVrPE72C90W7RbQHkLZAzvrYgN00G-r2de3sa48aIFwk9LeTcnhn0ekma3-PFR_MHuf3vcDfmi1xmK0KwxtCR5oVxD6RBI1e-yqfWHfhB3dAWwhTPzVbIFh2Aq5dDIPzNCyHNZFGL7qJGDlc4cB0dfchT-zJ0ZtsqXSeGTtglYtucM1K975M0onWji"/>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Earrings</span>
+</a>
+<!-- Cat 3 -->
+<a class="group flex flex-col items-center" href="#">
+<div class="w-full aspect-square bg-surface-container-low rounded-full overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-105 editorial-shadow relative border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Exquisite bridal headpieces and maang tikka sets arranged symmetrically on a velvet ivory cloth. High-contrast lighting highlights the golden textures and polished gems, creating a regal and aspirational mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCwL8-AkGVSbQHLbixdUDRWTmQFH1phueIcqIhlVsie_eitN-a3jUJ-6y3kCTmPFzjklKSJW8uC3cdeXrdY154fK6ICEMIgv8x_PHF1MJBhzC4vIuFONBa9l_iWmf_Tw01jTf1m2ETwqGNa5H17xhy331V6DZcl0X0XG2wAYG58Bb-u2Rjm-FzMwxaB_4-Ar7e7ENZb0lu_BA3nt_FAjuYCTO1JaqAy6wfet59p71v6YW0n42EIOU43gYVYoOmINUXB_M70oDWGQEp"/>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Bridal</span>
+</a>
+<!-- Cat 4 -->
+<a class="group flex flex-col items-center" href="#">
+<div class="w-full aspect-square bg-surface-container-low rounded-full overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-105 editorial-shadow relative border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A luxury gold-tone watch with an ornate dial and gemstone embellishments, resting against a textured cream background. The image style is minimal and high-contrast, characteristic of premium heritage jewelry brands." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz7ohA8T1DfoIl6zkn5iO5ljEWBmfmWDz51a31NYZxIbnYOvc72mPTCT07H4cf3QafAucZZaSIMcwgnxoQkOeKyC4v36tV2nHEKTJmWtcFkMbXhOyumykrMXSWVjkUmTJV2a_0JjlFhuk0Ht7z6BRbkiSqn3oEM1qPu0Ue4LJwqcAWqacEV3OCHEZQpbR30mW5uQEvqj1nSsVF9gszSSXqxmNx8GaCdZNYdvQCFwFXnsNys41dkZARwC74lrHVTULkyvsSl9RfREEx"/>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Watches</span>
+</a>
+</div>
+</section>
+<!-- Trending & New Horizontal Scroll -->
+<section class="py-section-gap bg-surface-container-low overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto mb-12 flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">Trending Now</h2>
+<p class="font-body-md text-on-surface-variant">The pieces everyone is talking about this season.</p>
+</div>
+<div class="flex gap-4">
+<button class="p-4 border border-outline-variant rounded-full hover:bg-primary hover:text-white transition-colors group">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="p-4 border border-outline-variant rounded-full hover:bg-primary hover:text-white transition-colors group">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto no-scrollbar px-margin-desktop pb-12">
+<!-- Product Card 1 -->
+<div class="min-w-[320px] group">
+<div class="relative bg-white aspect-[3/4] overflow-hidden mb-4 rounded-lg">
+<span class="absolute top-4 left-4 z-10 bg-sale-accent text-white px-3 py-1 font-label-sm rounded-sm">NEW</span>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="High-angle shot of a Polki diamond necklace set with vibrant green emeralds on an ivory-toned textured surface. The image transition from a flat lay to a lifestyle shot of a woman wearing it is implied by the premium quality. Lighting is bright, soft, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9CxK6UwNjko3MqfnS2Ex8bqX1zfms9mnPIttd8ETj8Ae8LjXbFUGI-MBHiaw-47aOwAAv1hE7lO9qS4BOD7m6LsSGWiKhdXKm_jAo7Ny-M346orMW9VEl9P86fmOeNSzeB-P-eDGaYWVQ4ZKaqVX683wnG_kO1qT6oPvqJ8MbaAoK6dR5pwAhM89SmZu6gtfoyr-8I2hnNQpy07MUlp7Mb6nxUxXn5tIeUcEq0U19WYZlHbBIkPv_oP_irQHm-XUJADMaVx8OPwNW"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-4 flex justify-center">
+<button class="text-primary-container font-label-sm uppercase tracking-widest flex items-center gap-2">
+                            Quick View <span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<h3 class="font-body-lg font-bold mb-1">Rajputana Emerald Set</h3>
+<p class="font-label-sm text-primary mb-2">₹12,499</p>
+</div>
+<!-- Repeat for card 2, 3, 4, 5... -->
+<div class="min-w-[320px] group">
+<div class="relative bg-white aspect-[3/4] overflow-hidden mb-4 rounded-lg">
+<span class="absolute top-4 left-4 z-10 bg-primary-container text-on-primary-container px-3 py-1 font-label-sm rounded-sm">COLLECTOR'S</span>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Intricate Temple Jewelry necklace with motifs of Indian deities in oxidized gold finish. The background is a neutral warm ivory, with studio lighting emphasizing the matte gold texture and fine engravings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaTEGruUu57UuQr8lZ0C063Rr5XUPtRkUWlYvcyVtxtF043jF1phoc4i6b4O9yXh6FgRkq1hWscM_aXPFTOqVg3Dst7rXV4gkT9ZYdtlZHuQZCBaC30WnixI_JEMVNV7Tr-aggxDlwNYPKJxnMJtSd0UD_EGAsxhGWE5BR5zo_LX7uW2vZIupZsN0WeQk9GchDmYy6Q0TvlBt0DHAq6kuuRneLhNpIrxVxGFojNGSR-wG_7f7XWYo1E0zPN_afVHdeXdicxiAEyN7v"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-4 flex justify-center">
+<button class="text-primary-container font-label-sm uppercase tracking-widest flex items-center gap-2">
+                            Quick View <span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<h3 class="font-body-lg font-bold mb-1">Temple Heritage Harum</h3>
+<p class="font-label-sm text-primary mb-2">₹24,999</p>
+</div>
+<div class="min-w-[320px] group">
+<div class="relative bg-white aspect-[3/4] overflow-hidden mb-4 rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist gold bangles with delicate floral patterns. Shot in a clean editorial style with high-key lighting on a smooth ivory backdrop, focusing on the elegance and simplicity of the jewelry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP5WvYJN-3J_NV7U3F9A1h91-QPUJKswTNU0fDBdWFZccFF0BRXtBGVw7Kcxv-nJ3RGk3WVt8wcnz8QTwJDMTqET6_U_csCYW3wWdsFvVr1MrdAXGI9R08Zg2LzuI1J8v_lnc8AG8tMeOmpWrUZzpkwCw4yb0EBZdUN08MARVVTZRxxGzYYRdzuIXCj7jtjmsi-5xkzu8KpaKyhKYLeOi6wk0wk24DxpAX8qNUgR_PscikGDmf6VCU9KKr30LOIYtrsB7Jr682lCy-"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-4 flex justify-center">
+<button class="text-primary-container font-label-sm uppercase tracking-widest flex items-center gap-2">
+                            Quick View <span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<h3 class="font-body-lg font-bold mb-1">Noor Bangle Collection</h3>
+<p class="font-label-sm text-primary mb-2">₹8,999</p>
+</div>
+<div class="min-w-[320px] group">
+<div class="relative bg-white aspect-[3/4] overflow-hidden mb-4 rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Chandelier style gold earrings with pearls and turquoise stone accents. The aesthetic is inspired by Bollywood royalty, featuring warm shimmering gold highlights against a pristine off-white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4WNyJwn0jylbWiaLHKJpxjx2X6VsuVimPVySK1YDncmwelBKcED1uatCu-H8qHGMuNXgAvag2Hdnx6qhkRVXrX437YFx5WljLE4idTwTsIb6OB95FuVWTMW7dC0NnMsinde7tzjTl0GwXggCB4VlASrS3N39avgF3Sw2B-6RBl7vQgkjL0kRsj071TzxaL_PQY3hmcCsGlVJa7hsPbQjQcp-RMh5rfSX7ahtZat9d34U8mCvCgP1EATi1OJrQ_Jr_iGw47kiGnsPk"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-4 flex justify-center">
+<button class="text-primary-container font-label-sm uppercase tracking-widest flex items-center gap-2">
+                            Quick View <span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<h3 class="font-body-lg font-bold mb-1">Sultana Jhumkas</h3>
+<p class="font-label-sm text-primary mb-2">₹6,499</p>
+</div>
+</div>
+</section>
+<!-- Editorial Featured Collection Banner -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 items-center gap-gutter bg-surface-container rounded-2xl overflow-hidden editorial-shadow">
+<div class="md:col-span-7 h-[600px] relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial lifestyle shot of a bride in a deep maroon velvet saree, adorned with heavy antique gold jewelry. The light is moody and theatrical with a soft focus on the background. Warm gold shimmers reflect off her jewelry, creating a sense of opulence and cinematic heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8bTpMoVuWv-dfeafWfYt05QtvfmV72NlmqH8sENOHzJ2iVt3dq0TRXpaNqScwW-JYRuYjrlC2bHTg23-Rs81R7f9njfq3TiloUIwl0aTgNdYuVPtrIxKIBGnFaEVKGhh9UjMuLSxQFfwwWgEfqVYDj1Y0G03AnOKJvpy33ITNfb7bo5dwwB_euF6qSjWRJ2I6kzPNZ20fRRp_rgxMs1lj4A1eqykjeQEYFEfzTqQyrWBl1XVdpjGGEnfvruIbn5IYf020YFGuLUKB"/>
+</div>
+<div class="md:col-span-5 p-12 lg:p-24 flex flex-col justify-center">
+<span class="font-label-sm uppercase tracking-[0.3em] text-deep-rose mb-4">Limited Edition</span>
+<h2 class="font-display-md text-display-md mb-8 leading-tight">The Royal Marwar Collection</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Inspired by the architectural marvels of Rajasthan, these hand-carved pieces capture the soul of the desert kingdom.</p>
+<button class="bg-primary text-white self-start px-12 py-5 font-label-sm uppercase tracking-widest rounded-lg hover:bg-on-surface transition-all duration-300">
+                    Explore Collection
+                </button>
+</div>
+</div>
+</section>
+<!-- Best Sellers 4-Column Grid -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col items-center mb-16">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-[0.2em] mb-4 text-center">Our Best Sellers</h2>
+<div class="w-24 h-[1px] bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative mb-6 overflow-hidden aspect-square rounded-xl bg-surface-white border border-outline-variant">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A pair of elegant ruby and gold stud earrings displayed on a minimalist white pedestal. Bright, high-key lighting creates a clean luxury feel, focusing on the deep red color and the polished gold setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqIWtKo4py00StnWJRdwNAFXNfBjqWFsiMryEIqxQmTHe_7d-5ma0aQqEGhQrCZ8pm4eIL4gAQYR-8vwNRQ8W4Yrw2VNU4OOL33MzLhgDbcaaNZolRWjTkbHjw8XVXgmdsV1ZJ3j1nD1L1y8nU3hTdNGLFzDJe3X-GYWZpPPbaqFyByjmaw0zhxwLB92KlqCINIbXOg89PjTSfeIEp-8OnySKo93PTwF4QjqgROLD-D26B383QwGvv6Fw8RD2PrhHLTDQbkWj3NIqh"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-body-md font-semibold text-on-surface mb-1">Ruby Halo Studs</h4>
+<p class="font-label-sm text-primary">₹3,499</p>
+</div>
+<div class="flex gap-1">
+<span class="w-3 h-3 rounded-full bg-error border border-outline"></span>
+<span class="w-3 h-3 rounded-full bg-deep-rose border border-outline"></span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative mb-6 overflow-hidden aspect-square rounded-xl bg-surface-white border border-outline-variant">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern gold chain necklace with a singular pearl pendant. The styling is minimal and editorial, featuring a clean ivory backdrop and soft shadows that give a floating three-dimensional appearance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiJPZacwfPg3278eQM1j8tc70tRI0dX3eKI-iw_YJMf9t7Tansa2yuOZhsFtMYCvFEDMqGLqONxeB0yFoSfGeQ-9D4lPQbwoIOfSDrxbcqDKHZWD8aRuVnIwwfttYVOykrZVD60yshzaxRsndx5eWzlosgevDxJ3dL06uamP1IySHggAZYZMFjGRsjjkAv_2qqDWih2i4ypV9htV9lo5EFjft-vmkQvsEDUsqrf8rJWa61LxWdlHE1IBP7ausTughm7zoXDdGhLiqa"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-body-md font-semibold text-on-surface mb-1">Pearl Drop Choker</h4>
+<p class="font-label-sm text-primary">₹5,200</p>
+</div>
+<div class="flex gap-1">
+<span class="w-3 h-3 rounded-full bg-surface-white border border-outline"></span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative mb-6 overflow-hidden aspect-square rounded-xl bg-surface-white border border-outline-variant">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Antique gold finish bangles with intricate filigree work. Shot in an editorial high-contrast style on a cream background, highlighting the dark crevices and bright gold highlights of the craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcuonH59nnIr_NlITKNoItk4nCD0QHDhSXBF0T4lvlF-glScchGEfTEgqSqNAEpwk2nQLBc9P6qf2pjptotiCWs0GHY7HJXwxr2Pu9fWYiz9Sq2MrsRf3cogzZ6J5K0bdhKg0BHyYTEZ5H73ah-0qhkS-ht3K1QbKZF7_dcIrjWX51-BCdxDrTjy2vgU0nibyBsEsrpJU5pyrXpmZbfDJ75UZ7HrGJexD9yc8TMEOZjNJu-apfIvV-nalCdVWWSF9LrFNp-Sy-jnQM"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-body-md font-semibold text-on-surface mb-1">Heritage Gold Kada</h4>
+<p class="font-label-sm text-primary">₹18,750</p>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative mb-6 overflow-hidden aspect-square rounded-xl bg-surface-white border border-outline-variant">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A collection of gemstone rings featuring sapphires, emeralds, and diamonds set in gold. The lighting is crisp and bright, making every facet of the stones sparkle against a minimalist luxury ivory surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCojyA-Pf8LRzVaUv7VTsxQsuwL_6EZWMzWXWcXTrpsa-PKprEEL1aEGynN0U-atgHa7EQAfAf39H7Sz80s4NTsw9wd4i8EFlYBLsot8hecaXIJNL_0EWzyTWrKSLUHOpAROiLI3xowQ-n4bxVw7L4n-Xpsf_X7Ru-bX_ni8ecp29HzgNdY3FfSw8qw47lgN0XpOdgEZRzH4ALYksVNIjhYN4wnRcvaWXNpHeVN5lcIjQYZR-94f955IT2U9dpWp7OiysSvFgbbVIuY"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-body-md font-semibold text-on-surface mb-1">Navratna Eternity Band</h4>
+<p class="font-label-sm text-primary">₹9,999</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Shop By Color Section -->
+<section class="py-section-gap bg-surface-container-highest">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-widest mb-12">Shop by Color</h2>
+<div class="flex flex-wrap justify-center gap-8">
+<button class="group flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-[#E5097F] border-4 border-white editorial-shadow transition-transform group-hover:scale-110"></div>
+<span class="mt-4 font-label-sm uppercase tracking-widest">Ruby Red</span>
+</button>
+<button class="group flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-[#006E51] border-4 border-white editorial-shadow transition-transform group-hover:scale-110"></div>
+<span class="mt-4 font-label-sm uppercase tracking-widest">Emerald Green</span>
+</button>
+<button class="group flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-[#C9A84C] border-4 border-white editorial-shadow transition-transform group-hover:scale-110"></div>
+<span class="mt-4 font-label-sm uppercase tracking-widest">Royal Gold</span>
+</button>
+<button class="group flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-[#E8E8E8] border-4 border-white editorial-shadow transition-transform group-hover:scale-110"></div>
+<span class="mt-4 font-label-sm uppercase tracking-widest">Pure Silver</span>
+</button>
+<button class="group flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-[#8E535C] border-4 border-white editorial-shadow transition-transform group-hover:scale-110"></div>
+<span class="mt-4 font-label-sm uppercase tracking-widest">Rose Gold</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Newsletter Signup -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="relative bg-on-background p-12 md:p-24 rounded-3xl overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-20 pointer-events-none">
+<div class="w-full h-full shimmer-effect"></div>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div>
+<h2 class="font-display-md text-display-md text-primary-container mb-4">Join the Inner Circle</h2>
+<p class="font-body-lg text-surface-container-low">Receive exclusive previews of our couture collections and private sales directly in your inbox.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-surface-white/10 border border-surface-white/20 text-white p-5 rounded-lg focus:ring-primary-container focus:border-primary-container outline-none placeholder:text-surface-white/50" placeholder="Enter your email" type="email"/>
+<button class="bg-primary-container text-on-primary-container px-12 py-5 font-label-sm uppercase tracking-widest rounded-lg hover:bg-white transition-all duration-300">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant">
+<div class="w-full py-section-gap px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col space-y-6">
+<span class="font-display-md text-display-md text-primary uppercase">VIVAH LUXE</span>
+<p class="font-body-md text-on-surface-variant">Defining ethnic luxury for the global connoisseur. Craftsmanship that bridges centuries.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-sm uppercase tracking-widest text-on-surface">Collections</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Temple Jewellery</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Kundan Polki</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Bridal Trousseau</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Minimalist Gold</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-sm uppercase tracking-widest text-on-surface">Customer Care</h4>
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Shipping &amp; Returns</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Contact Us</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Store Locator</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-sm uppercase tracking-widest text-on-surface">Our Boutique</h4>
+<p class="font-body-md text-on-surface-variant">102 Royal Arcade, Heritage District<br/>Jaipur, Rajasthan 302001</p>
+<p class="font-body-md text-on-surface-variant">+91 141 555 LUXE</p>
+</div>
+</div>
+<div class="w-full border-t border-outline-variant py-8 px-margin-desktop text-center">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest">© 2024 VIVAH LUXE JEWELLERY. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions and simple carousel logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const announcementBar = document.querySelector('.sticky.top-0 div');
+            // Adding more duplicates for seamless marquee if needed
+            announcementBar.innerHTML += announcementBar.innerHTML;
+
+            // Simple reveal animation on scroll
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>

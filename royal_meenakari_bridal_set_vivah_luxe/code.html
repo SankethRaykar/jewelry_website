@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIVAH LUXE | Premium Bridal Necklace Set</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .shimmer-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer-effect::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 45%,
+                rgba(233, 216, 166, 0.3) 50%,
+                transparent 55%
+            );
+            transform: rotate(30deg);
+            animation: shimmer 4s infinite;
+        }
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#70343e",
+                        "surface-container": "#f1ede7",
+                        "shimmer-gold": "#E9D8A6",
+                        "on-background": "#1c1c18",
+                        "outline": "#7e7665",
+                        "outline-variant": "#d0c5b2",
+                        "secondary": "#5f5e5e",
+                        "surface-container-low": "#f7f3ed",
+                        "inverse-primary": "#e6c364",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "inverse-on-surface": "#f4f0ea",
+                        "tertiary": "#8c4b55",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "error-container": "#ffdad6",
+                        "background": "#fdf9f3",
+                        "surface-variant": "#e6e2dc",
+                        "inverse-surface": "#31302d",
+                        "on-surface-variant": "#4d4637",
+                        "surface-container-highest": "#e6e2dc",
+                        "on-tertiary-fixed": "#3a0915",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#656464",
+                        "surface-dim": "#dddad4",
+                        "tertiary-fixed-dim": "#ffb2bc",
+                        "sale-accent": "#E5097F",
+                        "tertiary-container": "#e595a0",
+                        "primary-fixed": "#ffe08f",
+                        "surface-white": "#FFFFFF",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fdf9f3",
+                        "on-primary-container": "#503d00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#672d37",
+                        "deep-rose": "#8E535C",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#755b00",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#755b00",
+                        "on-surface": "#1c1c18",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#c9a84c",
+                        "tertiary-fixed": "#ffd9dd",
+                        "surface-container-high": "#ebe8e2",
+                        "on-primary-fixed": "#241a00",
+                        "secondary-container": "#e5e2e1",
+                        "surface": "#fdf9f3",
+                        "primary-fixed-dim": "#e6c364",
+                        "on-primary-fixed-variant": "#584400",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "container-max": "1440px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-md": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-md": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Announcement Bar -->
+<div class="sticky top-0 z-50 bg-[#755b00] text-surface-white py-2 overflow-hidden whitespace-nowrap">
+<div class="inline-block animate-[marquee_20s_linear_infinite] px-4 font-label-sm text-label-sm uppercase tracking-widest">
+            Free International Shipping on Bridal Collections • Luxury Packaging Included • Handcrafted Excellence • Free International Shipping on Bridal Collections • Luxury Packaging Included
+        </div>
+</div>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+<!-- TopNavBar -->
+<header class="bg-surface/85 backdrop-blur-md sticky top-10 z-40 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-24">
+<h1 class="font-display-md text-display-md text-on-surface tracking-tighter cursor-pointer">VIVAH LUXE</h1>
+<nav class="hidden md:flex items-center space-x-10">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Necklaces</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1" href="#">Earrings</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Bridal</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Collections</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-on-surface text-2xl hover:text-primary transition-all">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface text-2xl hover:text-primary transition-all">person</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Multi-image Gallery Section -->
+<div class="lg:col-span-7 flex flex-col md:flex-row gap-4">
+<!-- Thumbnails -->
+<div class="order-2 md:order-1 flex md:flex-col gap-4 overflow-x-auto md:overflow-y-visible">
+<div class="w-20 h-24 flex-shrink-0 bg-surface-container border-2 border-primary cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="A detailed close-up of a high-end Polki bridal necklace featuring intricate gold filigree and uncut diamonds. The jewelry is presented on a minimalist ivory background with soft, editorial lighting that highlights the shimmering gold textures. The aesthetic is opulent and regal, reflecting a luxury South Asian wedding vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJfpM-slGMgerBX0RE7vpa46LO40m251Dlvc0T6aoeqpEygWfYN0azwXb1V3KT8ibmrK1FYP09q90eF4GjxHW6p5qgS1ZC9585eKXboMvC2ByJlLqNQQv2I-sBUMNT5IfROqCZ6MmXPIxiFq0cO8yazhnwPMekbrKjkQraeQfDjlK0VaKL8OKswIQUKLxhOXrqXC8iNMcCqSaLZPBV_TdYjgy3u57Rv3re4O3ts2xpPTcRZahsVIuPQ8hdqRLJPrfavQ2Nyt62bAmF"/>
+</div>
+<div class="w-20 h-24 flex-shrink-0 bg-surface-container hover:border-primary transition-all cursor-pointer opacity-70 hover:opacity-100">
+<img class="w-full h-full object-cover" data-alt="A professional lifestyle shot of a bride wearing a magnificent multi-layered gold and pearl necklace set. The background is a soft-focus heritage palace interior with warm amber tones. The lighting is dramatic and cinematic, emphasizing the sparkle of the gemstones and the regal aura of the bridal attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC21t_Rh6dl0kNdgOG_cTqmxVNFtpFXQzYgVQi-v63BJOyOVvPXFb6WXAWtBjV331BBfnQtyYAdaZLm1o3YliHGvQuMrc-PDdM7tQH_dGLM4QWPvUIvN18Qmg4s8UBEhDsgTV9vDwcMBLf1YgNdRC93xhQ86XL2T6eRw5xojiGAAIpdqPgTBojJQV3ynuIYBWnkKbz1C-k_t4pQzMtYWPmIsDNE1lMaa-D8AZNalXfOftDr9AyNC_9cfOyDLmAOM-hIHeX51Mlc7Exb"/>
+</div>
+<div class="w-20 h-24 flex-shrink-0 bg-surface-container hover:border-primary transition-all cursor-pointer opacity-70 hover:opacity-100">
+<img class="w-full h-full object-cover" data-alt="A top-down flat-lay of matching emerald and gold earrings and a maang tikka from the bridal necklace set. Arranged artistically on a textured cream silk fabric, the pieces reflect high-contrast light. The color palette consists of deep forest green, brilliant gold, and pure ivory, maintaining a sophisticated minimalist luxury brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCunByqmlqXaNc3piRCtyPMl8i8-Xu1bKG4y_McIrqNg0R53RvXDZAkzOOzG69sKMENq70xagcuNPcWHldt_shMbxI395k8HIAfzDyHazLep4wVQp83nKMr_3ADoMc80bp_heReFUZ0NT8C7mzXRiCAik8-wrZnXIqvyhYHtU8x1mF6Ys7X54vNBo2StqoV8wc1KPUMsDbD60LmjC80YzkTxZ3dmUzLdXx6xIVgNmQNOdMHOTOR9127uDkdEUyIKUxJ7YJ803Yridpt"/>
+</div>
+</div>
+<!-- Main Image with Zoom Simulation -->
+<div class="order-1 md:order-2 flex-grow relative group cursor-crosshair bg-surface-container overflow-hidden">
+<img class="w-full h-[600px] object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A grand centerpiece shot of a handcrafted 22k gold bridal necklace adorned with Polki diamonds and ruby droplets. The lighting is bright and high-key, creating a pristine light-mode atmosphere. Every detail of the artisanal gold work is visible against the neutral ivory surface, evoking a sense of heritage and high-fashion luxury." id="main-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcRP8q8qgHOtpSoOiDOoJeh5CjqijZOTq-5TMwiAd9ZdIhpoXEoGZIDTTxzLtigo0ozW05uP0ujyFmHU3bySlNYa50SK48Sk4t9M5xdKPMVIWJEfU6LEJ8CszOO0s2FweJ9MXA2TCM_M5r54A-xEQ3ZebBP7GRAdl7Gemk6qDRCxcvItxn3d-ltlM22JY1CJ0zGf11cKIlHORmyYSkulWy3qzAn1cTsjhXeq1X95M_xMGgLPCvq8FxL4kPMAmLyM0Bc0M_wGqFrFmc"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm tracking-widest uppercase">Collector's Item</span>
+</div>
+<button class="absolute bottom-4 right-4 bg-surface-white/80 backdrop-blur-md p-2 rounded-full shadow-lg group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+</div>
+</div>
+<!-- Product Details Section -->
+<div class="lg:col-span-5 flex flex-col space-y-8">
+<div>
+<nav class="flex space-x-2 font-label-sm text-label-sm text-on-surface-variant uppercase mb-4">
+<a class="hover:text-primary" href="#">Bridal</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Necklace Sets</a>
+</nav>
+<h2 class="font-display-md text-display-md text-on-surface leading-tight mb-2">Maharani Heritage Polki Set</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Ref. VL-BR-2024-001</p>
+</div>
+<!-- Pricing -->
+<div class="flex items-end space-x-4">
+<span class="font-headline-lg text-headline-lg text-on-surface">$12,450.00</span>
+<span class="font-body-lg text-body-lg text-on-surface-variant line-through">$15,500.00</span>
+<span class="bg-sale-accent text-on-primary px-2 py-0.5 font-label-sm text-label-sm rounded-sm">20% OFF</span>
+</div>
+<!-- Variant Selector -->
+<div class="space-y-4">
+<p class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest">Plating Finish</p>
+<div class="flex space-x-3">
+<button class="w-10 h-10 rounded-full border-2 border-primary p-0.5">
+<div class="w-full h-full rounded-full bg-[#D4AF37]"></div>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant p-0.5 hover:border-primary transition-all">
+<div class="w-full h-full rounded-full bg-[#E5E4E2]"></div>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant p-0.5 hover:border-primary transition-all">
+<div class="w-full h-full rounded-full bg-[#B76E79]"></div>
+</button>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col space-y-4 pt-4">
+<button class="shimmer-effect group w-full py-5 bg-on-background text-shimmer-gold font-label-sm text-label-sm uppercase tracking-[0.2em] rounded-sm transition-all hover:ring-1 hover:ring-shimmer-gold">
+                        Add to Shopping Bag
+                    </button>
+<button class="w-full py-5 border border-on-background text-on-background font-label-sm text-label-sm uppercase tracking-[0.2em] rounded-sm hover:bg-surface-container transition-all">
+                        Reserve for Trial
+                    </button>
+</div>
+<!-- Product Description Accordion -->
+<div class="border-t border-outline-variant mt-8">
+<div class="accordion-item border-b border-outline-variant">
+<button class="flex justify-between items-center w-full py-4 text-left" onclick="toggleAccordion('desc')">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Description &amp; Craftsmanship</span>
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-desc">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="content-desc">
+<div class="pb-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Inspired by the royal archives of Jaipur, the Maharani Heritage set is handcrafted in 22kt hallmarked gold. It features over 15 carats of premium uncut Polki diamonds, accented by Zambian emeralds and hand-strung Japanese pearls. Every link is meticulously joined to ensure a fluid drape around the neck, echoing the elegance of the cinematic golden era.
+                            </div>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant">
+<button class="flex justify-between items-center w-full py-4 text-left" onclick="toggleAccordion('mat')">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Material &amp; Care</span>
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-mat">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="content-mat">
+<div class="pb-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                22kt Yellow Gold, Uncut Polki Diamonds, Semi-precious Ruby droplets. Store in the provided velvet-lined heirloom box. Avoid direct contact with perfumes, hairsprays, and moisture. Clean with a soft, dry jewelry cloth only.
+                            </div>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant">
+<button class="flex justify-between items-center w-full py-4 text-left" onclick="toggleAccordion('ship')">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Shipping &amp; Returns</span>
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-ship">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="content-ship">
+<div class="pb-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Complimentary worldwide shipping via insured luxury courier. Ships in 14-21 business days due to custom finishing. Due to the high-value, bespoke nature of our bridal collection, all sales are final. We offer one complimentary resizing service within 6 months of purchase.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendations Grid -->
+<section class="mt-section-gap">
+<div class="flex justify-between items-end mb-12 border-b border-outline-variant pb-6">
+<h3 class="font-display-md text-display-md text-on-surface">You May Also Like</h3>
+<a class="font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1" href="#">View Full Collection</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group relative flex flex-col space-y-4">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A stunning pair of gold and pearl jhumka earrings featuring traditional Indian filigree patterns. The lighting is soft and golden, creating a warm, regal atmosphere against a minimalist ivory background. The composition is clean and editorial, emphasizing the luxury craftsmanship of the VIVAH LUXE brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4zsXy1rx4GhWziiJg3OzOx6fL7zzEA3nOnpkCGnwAO37h3FWBSbSMguzCb4Za0yk4ZkUNBvzCQiHYBruipPdsFxyW7n_H38QIS_ZpnY5fgR5uocmflLHI-LC9nhV9zv4psJZeNQ-U37gbUeDWzcwFOTtug0VgLcLTGWj6G72ZG-SOYXf7RG93HQjocRiDcEaA02LW0qpUEhf1Gu1mOpoflpN1ctmzhcNxRpnkEHzEmjqRw2fQZoTXsVJfcIXbtvXm-KeTE1zg-hO"/>
+<div class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-3 text-center">
+<span class="text-shimmer-gold font-label-sm text-label-sm uppercase tracking-widest">Quick View</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Rajputana Jhumkas</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$1,250.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative flex flex-col space-y-4">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A luxurious kundan choker necklace with deep emerald green stones and intricate enamel work on the reverse. The jewelry is captured in a high-contrast editorial style, with focused spotlighting that makes the gemstones glow. The overall aesthetic is one of royal Indian heritage mixed with modern minimalist presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSvhmvC2ozCHp6Vrcnew3wmAYMVkSSw9eZJOdOkVGichSrC2wDC25ixPf09EJWTuc_dZ6HMkRtSMKekCZZEtBiVwGlQW-TIIfaltzelgrDpMsalmj7Mw0zGjuCb_VqbpdPx6Z6n5Nsz0Y93-G3tiN-jQpkemZdmhJEyTP5FQQ20fh-1QRcbKsaC8ILG2eXDaNJNrnajLLTSMIn0qSCGw5YwmncVfHR1eTBbwtgrIFdKVN5Yuwp-bBNX6uORlqmAhz9BQxHV6MutHJb"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-2 py-0.5 font-label-sm text-label-sm uppercase tracking-tighter">New In</div>
+<div class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-3 text-center">
+<span class="text-shimmer-gold font-label-sm text-label-sm uppercase tracking-widest">Quick View</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Emerald Choker</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$3,800.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative flex flex-col space-y-4">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Intricate gold bridal bangles with floral motifs and ruby inlay, presented on a dark wooden heritage box. The lighting is warm and dramatic, highlighting the high-polish gold surfaces. The image evokes a sense of tradition and timeless luxury, perfectly aligned with a high-end ethnic jewelry brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQlRilvbYJ4rYUjdfZJKDMSf_J386_UmDjg6uYI7JlmpjsMdoOTlJpKZ3u2nZPIJIqjqyuxO3Oa4rUFIizlhXUcvaVH54N6PYpRV1XddSxm5a_h26a4ISAk5P64493Bwfx7izYQMBasus4aInH3_t4nuy31ScMucLokcygu8ECkF1OVHakdbaU2ThOCzIz7FyFiPtmVEIjmV8rA6JRWtrcCLF_sWuJ1j0Cl6RCw4jmqlz6vh0klN3ickoX4IzZax6rWJBVbRJByGSW"/>
+<div class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-3 text-center">
+<span class="text-shimmer-gold font-label-sm text-label-sm uppercase tracking-widest">Quick View</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Gajra Gold Bangles</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$2,100.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative flex flex-col space-y-4">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A delicate pearl and diamond maang tikka hair ornament for a bride. The piece is styled on a soft silk backdrop with ambient, diffused natural lighting. The color palette is composed of shimmering white, cream, and champagne gold, conveying a serene and highly aspirational bridal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-B9VZo55XU8PBo5MF_1dtC6M3y771DEox4ZcPvGUn9uTTvMKa6mMOdpEIUPLYa4xtiuD-9HqSv1pRglXwBzflAoAZPy8Gn4tK9bw9dKh3nd0cHcT9ldEtVd8iisfhmcySzNmBYj_MiT02pfFoDTQb39kXxde20HPajejfCfffrsKe9OJUhO2yhYYhbBRuftAWqPA_ZogkRPtIQOh5oOrNb84x4MHyZ57K7w_LLxs0ThTvJhZtxRzBjmwCq-9DGXLk8kO0Piu_piBI"/>
+<div class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-3 text-center">
+<span class="text-shimmer-gold font-label-sm text-label-sm uppercase tracking-widest">Quick View</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Celestial Maang Tikka</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$850.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Mobile Action Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-surface-white border-t border-outline-variant p-4 flex gap-4 z-50">
+<button class="flex-1 py-4 border border-on-background text-on-background font-label-sm text-label-sm uppercase tracking-widest rounded-sm">
+            Add to Bag
+        </button>
+<button class="flex-1 py-4 bg-on-background text-shimmer-gold font-label-sm text-label-sm uppercase tracking-widest rounded-sm">
+            Buy Now
+        </button>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant">
+<div class="w-full py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto">
+<div class="space-y-6">
+<h2 class="font-display-md text-display-md text-primary">VIVAH LUXE</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Crafting heritage jewelry for the modern global royalty. Every piece tells a story of artisanal excellence and cinematic glamour.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface">Concierge</h5>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Shipping &amp; Returns</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Contact Us</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Store Locator</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface">Categories</h5>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Necklace Sets</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Statement Rings</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Bridal Chudas</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-transform duration-300 hover:translate-y-[-2px]" href="#">Heirloom Boxes</a>
+</div>
+<div class="flex flex-col space-y-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface">Newsletter</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Join the inner circle for exclusive previews of new collections.</p>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 py-2 font-body-md" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 bottom-2 font-label-sm text-label-sm uppercase text-primary">Join</button>
+</div>
+</div>
+</div>
+<div class="w-full py-8 px-margin-desktop border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 VIVAH LUXE JEWELLERY. ALL RIGHTS RESERVED.</p>
+<div class="flex space-x-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all">public</span>
+</div>
+</div>
+</footer>
+<script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close all others
+                document.querySelectorAll('[id^="content-"]').forEach(el => el.style.maxHeight = '0px');
+                document.querySelectorAll('[id^="icon-"]').forEach(el => el.style.transform = 'rotate(0deg)');
+                
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Initialize first accordion item open
+        window.addEventListener('load', () => {
+            toggleAccordion('desc');
+        });
+    </script>
+</body></html>
