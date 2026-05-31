@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const [products, setProducts] = useState([]);
 
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch(`${API_URL}/api/products`)
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(console.error);

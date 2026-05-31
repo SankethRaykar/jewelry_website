@@ -21,12 +21,33 @@ Sentry.init({
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
 
-app.use(cors());
+// Middleware
+const allowedOrigins = [
+  process.env.CLIENT_URL,
+  'https://jewelry-website-omega.vercel.app',
+  'http://localhost:5173'
+].filter(Boolean);
+
+app.use(cors({ 
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(null, true); // Allow all temporarily for easy deployment
+    }
+  }, 
+  credentials: true 
+}));
 app.use(express.json());
 
-// Basic health check route
-app.get('/api/health', (req, res) => {
+// Basic Route
+app.get('/', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'BlingLux API is running' });
+});
+
+// Health check route
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'healthy', timestamp: new Date() });
 });
 
 // Import Routes
