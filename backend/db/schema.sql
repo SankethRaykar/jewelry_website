@@ -130,7 +130,7 @@ create policy "Admins can manage banners" on public.banners for all using (
 
 -- Storage bucket policies (Public read, authenticated insert)
 create policy "Public Access" on storage.objects for select using (bucket_id = 'blinglux_assets');
-create policy "Admin Uploads" on storage.objects for insert using (
+create policy "Admin Uploads" on storage.objects for insert with check (
   bucket_id = 'blinglux_assets' and
   exists (select 1 from public.profiles where id = auth.uid() and role = 'admin')
 );
