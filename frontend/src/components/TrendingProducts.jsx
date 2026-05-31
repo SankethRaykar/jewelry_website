@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 export default function TrendingProducts({ products }) {
   const sectionRef = useRef(null);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -51,7 +53,10 @@ export default function TrendingProducts({ products }) {
               </Link>
               
               <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-on-background py-4 flex justify-center">
-                <button className="text-primary-container font-label-sm uppercase tracking-widest flex items-center gap-2 add-to-bag">
+                <button 
+                  onClick={() => addToCart(product)}
+                  className="text-primary-container font-label-sm uppercase tracking-widest flex items-center gap-2 add-to-bag"
+                >
                   Add to Bag <span className="material-symbols-outlined text-[18px]">shopping_bag</span>
                 </button>
               </div>

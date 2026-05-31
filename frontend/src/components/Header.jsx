@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 export default function Header() {
+  const { cartCount, setIsCartOpen } = useCart();
+
   return (
     <>
       {/* Announcement Bar */}
@@ -31,9 +34,16 @@ export default function Header() {
               <input className="bg-transparent border-none focus:ring-0 text-body-md ml-2 w-40" placeholder="Search heritage..." type="text"/>
             </div>
             <Link to="/admin" className="material-symbols-outlined text-on-surface hover:text-primary transition-all duration-300">person</Link>
-            <button className="material-symbols-outlined text-on-surface hover:text-primary transition-all duration-300 relative" id="cart-trigger">
+            <button 
+              className="material-symbols-outlined text-on-surface hover:text-primary transition-all duration-300 relative" 
+              onClick={() => setIsCartOpen(true)}
+            >
               shopping_bag
-              <span className="absolute -top-1 -right-1 bg-sale-accent text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">1</span>
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-sale-accent text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">
+                  {cartCount}
+                </span>
+              )}
             </button>
           </div>
         </div>
