@@ -17,9 +17,7 @@ Sentry.init({
   profilesSampleRate: 1.0,
 });
 
-// The request handler must be the first middleware on the app
-app.use(Sentry.Handlers.requestHandler());
-app.use(Sentry.Handlers.tracingHandler());
+// The request handler is automatically injected by Sentry v10+, no manual Handlers needed
 
 // Middleware
 const allowedOrigins = [
@@ -64,8 +62,7 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 
-// The error handler must be before any other error middleware and after all controllers
-app.use(Sentry.Handlers.errorHandler());
+// Sentry error handler is automatically attached in v10+
 
 // Global Error Handler
 app.use((err, req, res, next) => {
